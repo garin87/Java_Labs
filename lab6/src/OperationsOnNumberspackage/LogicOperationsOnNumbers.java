@@ -38,27 +38,21 @@ public class LogicOperationsOnNumbers {
     }
 
     public static int differentNumber(int n) {
-        int different = 1;
-        int[] a = new int[10];
-        int count = 0;
+        
+        String str = String.valueOf(n);
+        char [] s = str.toCharArray();
+        int count = 0; 
 
-        while (n != 0) {
-
-            a[count] = n % 10;
-            count++;
-            n = n / 10;
-        }
-
-        for (int i = 1; i < count; i++) {
-            for (int k = i + 1; k <= count; k++) {
-                if (a[k] != a[i]) {
-                    different++;
-                    break;
-                }
+        for (int i = 0; i < s.length; i++)
+            {
+                int t = 1;
+                for (int j = 0; j < i; j++)
+                    if (s[j] == s[i])
+                    { t = 0; break; }
+               count += t;
             }
-        }
-         
-        return different;
+        
+        return count;
     }
 
     public static int maxNumber(int n) {
