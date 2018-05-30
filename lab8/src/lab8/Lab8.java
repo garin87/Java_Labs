@@ -8,8 +8,10 @@ package lab8;
 import java.util.Arrays;
 
 /**
- *
- * @author rtty
+ * 30.05.2018
+ * Group pois1709v
+ * @author Stas ilyukovich
+ * v 1.0
  */
 public class Lab8 {
 
