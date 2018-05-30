@@ -6,9 +6,12 @@
 package lab8;
 
 /**
- *
- * @author rtty
+ * 30.05.2018
+ * Group pois1709v
+ * @author Stas ilyukovich
+ * v 1.0
  */
+
 public class View {
 
     public static void print(String msg) {
